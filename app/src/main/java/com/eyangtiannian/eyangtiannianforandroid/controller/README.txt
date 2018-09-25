@@ -1,0 +1,3 @@
+Android的控制层的重任通常落在了众多的Activity的肩上。
+这句话也就暗含了不要在Activity中写代码，要通过Activity交割Model业务逻辑层处理，
+这样做的另外一个原因是Android中的Actiivity的响应时间是5s，如果耗时的操作放在这里，程序就很容易被回收掉。
